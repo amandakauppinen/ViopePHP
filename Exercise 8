@@ -9,7 +9,7 @@ Luku: <input TYPE="text" name="number"><br>
 <input type="submit" value="Send">                  
 </form>
 
-**Soltion**
+**Solution**
 
 <?php
 	
