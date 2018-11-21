@@ -1,0 +1,22 @@
+**Prompt**
+
+Write a PHP script that prints the absolute value of the number inputted in the form.
+
+<form action="absolute.php" method="get">
+Number: <input type="text" name="number">
+<input type="submit" value="Send">
+</form>
+
+**Soltion**
+
+<?php
+$number=$_GET["number"];
+
+if ($number < 0){
+	$newNumber = $number * (-1);
+	echo "The absolute value of the number $number is $newNumber";
+
+} else {
+  echo "The absolute value of the number $number is $number";
+}
+?>
