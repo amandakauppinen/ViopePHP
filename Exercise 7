@@ -1,0 +1,27 @@
+**Prompt**
+
+Write a PHP script that checks the message sent from the form and then prints the name of the sender and
+the message. If the sender name or the message is blank, print ”You didn’t give all required information!”
+Remove any spaces before or after the user name or message. Remove also any HTML tags to make sure the user
+can’t alter the guestbook. The used form looks like this:
+
+<form action="guestbook.php" method="get">
+Sender: <input TYPE="text" name="name"><br>
+Message: <input type="text" name="message"><br>
+<input type="submit" value="Send">                  
+</form>
+
+**Soltion**
+
+<?php
+$name=$_GET["name"];
+$message=$_GET["message"];
+
+if ($name and $message) {
+	echo "$name:";
+	echo " $message";
+
+} else {
+  echo "You didn’t give all required information!";
+}
+?>
