@@ -10,7 +10,7 @@ Second number: <input type="text" name="secondnumber">
 <input type="submit" value="Send">
 </form>
 
-**Soltion**
+**Solution**
 
 <?php
 	
