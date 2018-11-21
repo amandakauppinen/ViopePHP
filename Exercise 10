@@ -12,7 +12,7 @@ Tax percentage: <input type="text" name=”tax">
 If user doesn't fill all fields, program prints: "Fill out all the fields."
 Hint: Tax part of the salary can be calculated with the equation: hours* salary per hour* tax percentage/100
 
-**Soltion**
+**Solution**
 
 <?php
 	
