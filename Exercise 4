@@ -8,7 +8,7 @@ Favorite food: <input type="text" name="food">
 <input type="submit" value="Send">
 </form>
 
-**Soltion**
+**Solution**
 
 <?php
 $getColor=$_GET["color"];
