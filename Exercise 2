@@ -1,0 +1,17 @@
+**Prompt**
+
+'Copy the below source code (includes syntax errors), to the text box. Then click on the “Answer” button.
+The automatic checking- and feedback system tells you where and what kind of error the code contains. You can
+also see what the PHP compiler says about the error. Search code for errors and fix them so that the program works as below.
+
+?php
+echo This program contains errors.\n"
+ech "You need to fix them.";
+?>
+
+**Solution**
+
+<?php
+echo "This program contains errors.\n";
+echo "You need to fix them.";
+?>
