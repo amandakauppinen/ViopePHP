@@ -1,0 +1,25 @@
+**Prompt**
+
+Complete the below PHP script so that it prints the sum and average of given points. The points are sent to the script as a
+character string, where points are separated with comma (e.g. 4,5,2). Points are divided into an array with the explode-function.
+The purpose of the script is to print the points separated with a space. Write only the missing statements, don’t write the
+whole program in the text box. Incomplete program.
+
+**Solution**
+
+//not my code, not to by modified
+<?php
+    $numberstring = $_GET['numberstring'];
+    $numberarray = explode(',',$numberstring);
+    $points = implode(' ', $numberarray);
+    
+    //my code
+    $average = array_sum($numberarray) / count($numberarray);
+	  $sum = array_sum($numberarray);
+    
+ 
+    //not my code, not to by modified
+    echo "Points were: $points\n";
+    echo "Sum of points: $sum\n";
+    echo "Average of points: $average";
+?>
