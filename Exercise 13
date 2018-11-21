@@ -1,0 +1,24 @@
+**Prompt**
+
+Complete the below program by defining the missing variables so that the program prints as is shown in the example.
+Write only the missing statements, don't write the whole program in the text box. Incomplete program
+
+**Solution**
+
+<?php
+
+    //my code
+    $a = array("Cat1" => "9",
+           "Cat2" => "7",
+           "Cat3" => "5");
+	
+    $text = "Between the quotations (\" and \") you can use the forward slash (\) to print special characters. \n";
+   $amount = count($a);
+    $animal = "cat";
+ 
+    //not my code, not to be modified
+    $printing = implode(",",$a);
+    echo $text;
+    echo "I bought $amount {$animal}s.\n";
+    echo "Array contents: $printing";
+?>
