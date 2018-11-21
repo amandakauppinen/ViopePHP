@@ -1,0 +1,35 @@
+**Prompt**
+
+Write a PHP script that prints employees gross salary, tax and net salary. The used form looks like this:
+
+<form action="salary.php" method="get">
+Work hours: <input type="text" name="hours">
+Hourly salary: <input type="text" name="perhour">
+Tax percentage: <input type="text" name=”tax">
+<input type="submit" value="Send">
+</form>
+
+If user doesn't fill all fields, program prints: "Fill out all the fields."
+Hint: Tax part of the salary can be calculated with the equation: hours* salary per hour* tax percentage/100
+
+**Soltion**
+
+<?php
+	
+$hours=$_GET["hours"];
+$salary=$_GET["perhour"];
+$tax=$_GET["tax"];
+
+$grossSalary = $hours * $salary;
+$taxDeduction = ($hours* $salary * $tax)/100;
+$netSalary = $grossSalary - $taxDeduction;
+
+if ($hours and $salary and $tax) {
+	echo"Gross salary: ",$grossSalary," \n";
+	echo"Tax deduction: ",$taxDeduction," \n";
+	echo"Net salary: ",$netSalary," \n";
+}
+else {
+	echo"Fill out all the fields.";
+}
+?>
