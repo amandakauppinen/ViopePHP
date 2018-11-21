@@ -20,7 +20,7 @@ Write your age:
 <input type="submit" value="Send">                
 </form>
 
-**Soltion**
+**Solution**
 
 
 <?php
