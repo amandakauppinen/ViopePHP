@@ -1,0 +1,20 @@
+**Prompt**
+
+This exercise is an introduction to PHP programming. Below is a program written with PHP. Your task is to rewrite the
+program. The next chapter will teach you how the program works and what it actually does.
+
+<?php
+
+    echo "This is the first program.";
+
+    echo "PHP, here we go!";
+
+?>
+
+**Solution**
+
+<?php
+
+    echo "This is the first program.PHP, here we go!";
+
+?>
