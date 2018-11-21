@@ -1,0 +1,21 @@
+**Prompt**
+
+Your task is to complete the below program so that it prints as shown in the example. There's only one missing function
+that you need to write. Just write that missing function in the text box. Incomplete program.
+
+**Solution**
+
+<?php
+
+//my code
+function newValue($charstring) {
+	echo "String in the start: ",$charstring,""; 
+	global $charstring;
+	$charstring = "New string \n";
+	}
+  
+ //not my code, not to be modified
+ $charstring = "first\n";
+ newvalue($charstring);
+  echo "String in the end: $charstring\n";
+?>
