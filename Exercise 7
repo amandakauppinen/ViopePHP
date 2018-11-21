@@ -11,7 +11,7 @@ Message: <input type="text" name="message"><br>
 <input type="submit" value="Send">                  
 </form>
 
-**Soltion**
+**Solution**
 
 <?php
 $name=$_GET["name"];
