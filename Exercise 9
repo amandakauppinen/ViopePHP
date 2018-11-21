@@ -1,0 +1,28 @@
+**Prompt**
+
+Write a PHP script that prints the result of a multiplication and a division of the numbers user inputs on the form.
+The first number is the dividend and the second is the divider. If the second number is zero, the division result will
+be the text "You can't divide with a zero."
+
+<form action="calculations.php" method="get">
+First number: <input type="text" name="firstnumber">
+Second number: <input type="text" name="secondnumber">
+<input type="submit" value="Send">
+</form>
+
+**Soltion**
+
+<?php
+	
+$n1=$_GET["firstnumber"];
+$n2=$_GET["secondnumber"];
+
+if ($n2 == 0) {
+	echo"The result of multiplication is: ".($n1 * $n2)." \n";
+	echo"The result of division is: You can’t divide with a zero.";
+}
+else {
+	echo"The result of multiplication is: ".($n1 * $n2)." \n";
+	echo"The result of division is: ".($n1 / $n2)."";
+}
+?>
