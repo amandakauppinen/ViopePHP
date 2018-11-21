@@ -7,7 +7,7 @@ Number: <input type="text" name="number">
 <input type="submit" value="Send">
 </form>
 
-**Soltion**
+**Solution**
 
 <?php
 $number=$_GET["number"];
