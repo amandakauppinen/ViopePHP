@@ -1,0 +1,25 @@
+**Prompt**
+
+Change the elements of the array array, so that program prints the example print. You are not allowed to create a
+new array, you should change the elements of the existing array. Write only the missing statements, don’t write the
+whole program in the text box. Incomplete program.
+
+**Solution**
+
+//not my code, cannot be modified
+<?php
+    $array = array("Kevin Rose" => "Digg Road 5",
+           "Jack Dorsey" => "Twitter Street 9",
+           "Mark Zuckerberg" => "Facebook Way 22");
+           
+//my code
+
+/*There is no missing data from the given code to the final output, 
+so I just took out an array element, and inserted it again.*/
+
+unset($array["Mark Zuckerberg"]);
+$array["Mark Zuckerberg"] = "Facebook Way 22";
+
+//not my code, cannot be modified
+    print_r($array);
+?>
