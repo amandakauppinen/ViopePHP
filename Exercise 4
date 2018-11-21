@@ -1,0 +1,19 @@
+**Prompt**
+
+Write a PHP script that prints the input information in the form as shown below.
+
+<form action="favorites.php" method="get">
+Favorite color: <input type="text" name="color"><br>
+Favorite food: <input type="text" name="food">
+<input type="submit" value="Send">
+</form>
+
+**Soltion**
+
+<?php
+$getColor=$_GET["color"];
+$getFood=$_GET["food"];
+
+echo("Your favorite color is $getColor and your favorite food is $getFood");
+
+?>
