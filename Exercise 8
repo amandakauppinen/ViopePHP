@@ -1,0 +1,37 @@
+**Prompt**
+
+Write a PHP script that prints the numbers from the number inputted on form to zero. The numbers should be
+separated with a single space but the last number, zero, should not have a space after it. If the user inputs
+a number smaller than zero, print “The number should be at least zero!” The used form looks like this:
+
+<form action="numbers.php" method="get">
+Luku: <input TYPE="text" name="number"><br>
+<input type="submit" value="Send">                  
+</form>
+
+**Soltion**
+
+<?php
+	
+$i=$_GET["number"];
+
+do {
+	if ($i>0) {
+
+  		echo "$i ";
+  		$i--;
+	}
+	
+	else if ($i == 0) {
+		echo "0";
+		break;
+	}
+	
+	else {
+		echo "The number should be at least zero!";
+		break;
+	}
+
+  }while ($i>=0);
+
+?>
